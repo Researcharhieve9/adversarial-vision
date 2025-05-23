@@ -2,8 +2,7 @@
 
 ## Overview
 
-This repository contains code for **Progressive Alignment for Robust Domain Adaptation (PARDA)**. It aims to improve robustness under domain shift in Unsupervised Domain Adaptation (UDA) under clean and adversarial settings.
-
+This repository contains code for **Progressive Alignment for Robust Domain Adaptation (PARDA)**. A robust domain adaptation framework that progressively aligns source and target domains under both clean and adversarial setting.
 
 ## Supported Benchmarks
 
@@ -58,7 +57,7 @@ python test.py \
 
 ## Optional t-SNE Visualization
 
-To plot feature alignment via t-SNE:
+To plot the t-SNE:
 
 ```bash
 python test.py --tsne
@@ -67,14 +66,14 @@ python test.py --tsne
 ## Directory Structure
 
 ```
-├── main.py                  # Training entry point
-├── test.py                  # Evaluation script
-├── net.py                   # FeatureExtractor and Classifier definitions
-├── config.py                # Dataset and class configuration
-├── utils.py                 # Utility functions (PGD, loaders, t-SNE, etc.)
-├── resnet.py                # Contain ResNet Backbone
-├── train.py                 # Contain Warm-start and MCD steps
-├── requirements.txt         # Environment setup
+├── main.py                  
+├── test.py                  
+├── net.py                  
+├── config.py                
+├── utils.py                 
+├── resnet.py              
+├── train.py                 
+├── requirements.txt         
 ```
 
 ## References & Acknowledgements
